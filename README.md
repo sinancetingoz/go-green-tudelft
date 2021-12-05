@@ -1,3 +1,6 @@
+# Go Green
+# 2019-04 CSE1105 - OOP Project
+
 # Installation Instructions:
 
 Make sure you have Git, Maven and Java installed on your machine
@@ -14,9 +17,25 @@ To run all the tests for this project, one can simply run: mvn test
 
 # Contributors:
 
+## Ali Sinan Cetingoz
+![picture](https://i.imgur.com/MDB2iee.jpg)
+
+netID: scetingoz
+
+Goals to achieve:
+-	Working as a team: Everyone of us will have to do their part without procrastinating in order to progress smoothly. As this will be a long process, presumably after a few weeks things are going to become more difficult, so the whole group needs to motivate each other. Also most certainly, all of us will have strengths and weaknesses on different parts of the project, so we will need to help each other out in those circumstances.
+-	Speaking up and communicating: A thing that will help us in the future is speaking up and showing our contribution during a teamwork. If all of us put our ideas into words and not hold them in us, we will understand our ways of thinking a lot faster, find a common idea that all of us would like to work on, and most importantly, the group members will feel closer to each other, making the teamwork fun and more efficient. I hope to achieve that during this project.
+-	Becoming better programmers: During the last 2 quarters, we did not have a chance to program Java language with our fellow students. This project gives us the chance to learn things together and share our programming knowledge with each other. Presumably all of us have some deficiencies in different parts of programming, and by sharing our knowledge we may fill in those deficiencies.
+
+Strong point:
+-	I played in some music bands which needed a lot of teamwork for a long period of time, so I am experienced about working as a team in long periods of time, and I am pretty sure that if all of us work without procrastinating this project will work smoothly.
+
+Weak point:
+-	I did't have any programming experience before coming to TU Delft, so I am still not a confident programmer.
+
 ## Wouter Jehee
 
-![](https://imgur.com/a/pNEACla)
+![picture](https://i.imgur.com/pZ45mtj.jpeg)
 
 netID: wjehee
 studentNumber: 4953355
@@ -44,7 +63,7 @@ from the client application on the server side.
 
 ## Dragos Vecerdea
 
-![](https://imgur.com/snAWRzG)
+![picture](https://i.imgur.com/snAWRzG.jpeg)
 
 netID: dvecerdea
 
@@ -71,7 +90,7 @@ Conclusion: I wish us luck and I feel that there is no way this project could go
 stick to the guidelines and listen to each other.
 
 ## Jochem van Lith
-![](https://imgur.com/hPWq14Y)
+![picture](https://i.imgur.com/hPWq14Y.jpeg)
 
 netID: jaevanlith
 Studentnum: 4917634
@@ -89,7 +108,7 @@ Furthermore, I'd like to take part a lot in the overall organisation and communi
 I am also interested in design, so I would like to implement a bit of that as well.
 
 ## Alec Nonnemaker
-![](https://imgur.com/a/fPqRwGY)
+![picture](https://i.imgur.com/4Wciby1.jpeg)
 
 netID = anonnemaker
 studentNumber: 4953282
@@ -120,23 +139,6 @@ Options
 -	I can try to lead conversations and start the conversation for important decisions. That should make it easier to have a bigger voice in decisions.
 Will
 -	To achieve my goal I just have to do it. It might be hard in the beginning but I will get used to it and it will get easier.
-
-## Ali Sinan Cetingoz
-![](https://i.imgur.com/MDB2iee.jpg)
-
-netID: scetingoz
-
-Goals to achieve:
--	Working as a team: Everyone of us will have to do their part without procrastinating in order to progress smoothly. As this will be a long process, presumably after a few weeks things are going to become more difficult, so the whole group needs to motivate each other. Also most certainly, all of us will have strengths and weaknesses on different parts of the project, so we will need to help each other out in those circumstances.
--	Speaking up and communicating: A thing that will help us in the future is speaking up and showing our contribution during a teamwork. If all of us put our ideas into words and not hold them in us, we will understand our ways of thinking a lot faster, find a common idea that all of us would like to work on, and most importantly, the group members will feel closer to each other, making the teamwork fun and more efficient. I hope to achieve that during this project.
--	Becoming better programmers: During the last 2 quarters, we did not have a chance to program Java language with our fellow students. This project gives us the chance to learn things together and share our programming knowledge with each other. Presumably all of us have some deficiencies in different parts of programming, and by sharing our knowledge we may fill in those deficiencies.
-
-Strong point:
--	I played in some music bands which needed a lot of teamwork for a long period of time, so I am experienced about working as a team in long periods of time, and I am pretty sure that if all of us work without procrastinating this project will work smoothly.
-
-Weak point:
--	I did't have any programming experience before coming to TU Delft, so I am still not a confident programmer.
-
 
 
 ## Ivaylo Georgiev
