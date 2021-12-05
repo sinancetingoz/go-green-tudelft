@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="activityPane" prefHeight="331.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ControllerTransport">
+   <children>
+      <Label fx:id="pointsText" alignment="CENTER" layoutX="23.0" layoutY="240.0" prefHeight="72.0" prefWidth="200.0" style="-fx-background-color: #9bc782; -fx-background-radius: 10px; -fx-text-alignment: center;" text="POINTS 0" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="standardButton" layoutX="519.0" layoutY="240.0" mnemonicParsing="false" onAction="#addActivity" prefHeight="72.0" prefWidth="163.0" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="transportBox" layoutX="245.0" layoutY="102.0" onAction="#inputActivity" prefHeight="48.0" prefWidth="244.0" />
+      <TextField id="kwhBox" fx:id="distanceField" layoutX="284.0" layoutY="170.0" prefHeight="48.0" prefWidth="83.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="21.0" />
+         </font></TextField>
+      <Label fx:id="kmText" layoutX="388.0" layoutY="178.0" prefHeight="32.0" prefWidth="54.0" text="KM">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="213.0" layoutY="14.0" prefHeight="72.0" prefWidth="308.0" text="TRANSPORT" textFill="#298c22">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="addSuccess" layoutX="505.0" layoutY="178.0" prefHeight="37.0" prefWidth="192.0" style="-fx-text-fill: green;" text="Successfully added!">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="addFail" layoutX="520.0" layoutY="178.0" prefHeight="37.0" prefWidth="163.0" style="-fx-text-fill: red;" text="Log not added...">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

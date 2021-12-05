@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane id="rootPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ControllerActivities">
+    <left>
+        <VBox prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="123.0" prefWidth="150.0" style="-fx-background-color: #9bc782;">
+                    <children>
+                        <ImageView id="logo" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="11.0">
+                            <image>
+                                <Image url="@images/logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <Button mnemonicParsing="false" onAction="#loadHome" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadMyLog" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="LOG" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadActivities" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #6BC782; -fx-background-radius: 0;" text="ACTIVITIES" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadStatistics" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="STATS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadFriends" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="FRIENDS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <HBox prefHeight="9.0" prefWidth="600.0" style="-fx-background-color: #9BC782;" BorderPane.alignment="CENTER" />
+    </top>
+   <center>
+      <VBox prefHeight="300.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane>
+               <children>
+                  <ImageView fx:id="foodIcon" fitHeight="97.0" fitWidth="97.0" layoutX="139.0" layoutY="98.0" onMouseClicked="#loadFoodActivity" opacity="0.4">
+                     <image>
+                        <Image url="@images/restaurant.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="transportIcon" fitHeight="142.0" fitWidth="142.0" layoutX="303.0" layoutY="76.0" onMouseClicked="#loadTransportActivity" opacity="0.4">
+                     <image>
+                        <Image url="@images/car.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="energyIcon" fitHeight="127.0" fitWidth="127.0" layoutX="499.0" layoutY="80.0" onMouseClicked="#loadEnergyActivity" opacity="0.4">
+                     <image>
+                        <Image url="@images/electricity.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="696.0" layoutY="14.0">
+                     <image>
+                        <Image url="@images/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Region layoutX="697.0" layoutY="13.0" onMouseClicked="#logOut" prefHeight="38.0" prefWidth="43.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="activityPane" prefHeight="468.0" prefWidth="634.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

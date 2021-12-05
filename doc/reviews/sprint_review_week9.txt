@@ -1,0 +1,21 @@
+Sprint review week 9
+
+GUI:
+- Improved the Friends page
+- Sorted the "My log" page by date
+
+Server:
+- Restore password via email implemented
+- Confirm email before registering a user implemented
+- Implemented app to work with not that many requests to the server
+
+Tests:
+- Tried to keep high branch coverage percentage
+
+Final steps:
+- Made changes on final report and submitted it before deadline
+- Made PowerPoint presentation
+- Made a video backup if there is an Internet breakdown during presentation
+
+Further:
+- (Hopefully) pass the course with a sufficient grade

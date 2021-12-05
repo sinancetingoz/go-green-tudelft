@@ -1,0 +1,20 @@
+Sprint review week 6
+In the GUI part we worked on a nice looking and easy-to-use visual interface:
+-We used icons instead of tabs with titles for the categories (transportation, food, energy).
+-We moved to removed the log out button from the main tabs and used a small icon in the corner which directly logs out.
+-We added more options on all categories (food types, transportation types, energy saving devices).
+-We enlarged the application window because it was too small.
+On the server side:
+-We worked on adding points on every data type inside all categories.
+-We tested the new features.
+No important changes were made on the database side.
+Next week, we should work on the following:
+On GUI:
+-Find a reliable library for adding and comparing statistics.
+-We could add profile pictures for better visualization.
+-Make icons more clear to understand.
+-Create friend request tab/screen.
+On server side:
+-Find a match between CO2 emission and points.
+On database:
+-If profile pictures will be added, work on storing an image in the database.

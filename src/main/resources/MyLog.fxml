@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ControllerMyLog">
+    <left>
+        <VBox prefHeight="300.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="123.0" prefWidth="150.0" style="-fx-background-color: #9bc782;">
+                    <children>
+                        <ImageView id="logo" fitHeight="100.0" fitWidth="100.0" layoutX="25.0" layoutY="11.0">
+                            <image>
+                                <Image url="@images/logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <Button mnemonicParsing="false" onAction="#loadHome" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadMyLog" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #6BC782; -fx-background-radius: 0;" text="LOG" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadActivities" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="ACTIVITIES" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadStatistics" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="STATS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#loadFriends" prefHeight="96.0" prefWidth="150.0" style="-fx-background-color: #9BC782; -fx-background-radius: 0;" text="FRIENDS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font></Button>
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <HBox prefHeight="9.0" prefWidth="600.0" style="-fx-background-color: #9BC782;" BorderPane.alignment="CENTER" />
+    </top>
+   <center>
+            <VBox>
+               <children>
+                   <AnchorPane prefHeight="90.0" prefWidth="750.0">
+                      <children>
+                         <ComboBox fx:id="filter" layoutX="125.0" layoutY="25.0" onAction="#chooseFilter" prefHeight="39.0" prefWidth="230.0" />
+                         <Button fx:id="applyButton" layoutX="395.0" layoutY="25.0" mnemonicParsing="false" onAction="#applyFilter" prefHeight="39.0" prefWidth="230.0" text="Apply filter">
+                             <font>
+                                 <Font name="Arial Rounded MT Bold" size="20.0" />
+                             </font>
+                         </Button>
+                          <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="696.0" layoutY="14.0">
+                              <image>
+                                  <Image url="@images/logout.png" />
+                              </image>
+                          </ImageView>
+                  <Region layoutX="692.0" layoutY="15.0" onMouseClicked="#logOut" prefHeight="37.0" prefWidth="53.0" />
+                      </children>
+                   </AnchorPane>
+            <VBox fx:id="noActivitiesBox" prefHeight="153.0" prefWidth="750.0">
+               <children>
+                  <Label fx:id="noLogsMessage" alignment="CENTER" minHeight="80.0" minWidth="490.0" prefHeight="80.0" prefWidth="490.0" style="-fx-border-color: #9bc782; -fx-border-radius: 8;" text="No activities yet..." textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button id="standardButton" fx:id="addActivityButton" alignment="CENTER" mnemonicParsing="false" onAction="#loadActivities" prefHeight="50.0" prefWidth="180.0" text="Add activities" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="155.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="130.0" top="20.0" />
+               </padding>
+            </VBox>
+                   <ScrollPane hbarPolicy="NEVER" prefHeight="502.0" prefWidth="750.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+                       <content>
+                           <VBox fx:id="feed" prefHeight="497.0" prefWidth="750.0" style="-fx-background-color: transparent;">
+                     <padding>
+                        <Insets left="130.0" />
+                     </padding>
+                           </VBox>
+                       </content>
+                   </ScrollPane>
+               </children>
+            </VBox>
+   </center>
+</BorderPane>

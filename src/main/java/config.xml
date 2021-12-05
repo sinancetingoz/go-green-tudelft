@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<info>
+    <url>jdbc:postgresql://142.93.230.132</url>
+
+    <username>gogreen</username>
+
+    <password>gogreen123</password>
+</info>

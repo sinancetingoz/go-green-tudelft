@@ -1,0 +1,23 @@
+Sprint review week 8
+
+# Client:
+During this week the a lot of improvements were made for the UI of our project:
+The user is now able to see his progress bar and his latest activities (also able to filter them). 
+All the buttons and the choiceBoxes are styled.
+All the friends and their total points are shown on the friends page
+
+# Server:
+Made all the connect classes inherit from an abstract class Connect (the code is cleaner)
+Tested the DefaultValue layers. 
+Programmed the logic of installing solar panels (when server restarts points are added)
+
+# Final report
+We wrote the first draft of the final report and received feedback
+
+# Further:
+We should focus on making the code as modular as possible(remove duplicate and redundant code)
+Try to use threads so the user does not feel the app slowing down.
+Implement recover password (send email with special link)
+Make tests with only one assert per test
+Improve the final report
+ 

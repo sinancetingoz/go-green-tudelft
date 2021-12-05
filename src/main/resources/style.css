@@ -1,0 +1,65 @@
+.table-view *.increment-button,
+.table-view *.decrement-button,
+.table-view *.increment-arrow,
+.table-view *.decrement-arrow
+{
+    -fx-padding: 0;
+    -fx-shape: "";
+}
+
+#progressbar {
+    -fx-accent: #9bc782;
+}
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+#logo:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.combo-box {
+    -fx-border-radius: 5px;
+    -fx-border-color: #9bc782;
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-cell,
+.combo-box-popup .list-view {
+    -fx-background-color: #9bc782;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #80a469;
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: white;
+}
+
+#kwhBox,
+#hoursAmount {
+    -fx-border-color: #9bc782;
+}
+
+#standardButton:hover,
+#addButton:hover,
+#applyButton:hover,
+#roundButton:hover {
+    -fx-background-color: #80a469;
+}
+
+#standardButton,
+#addButton,
+#applyButton {
+    -fx-background-color: #9bc782;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+#roundButton {
+    -fx-background-color: #9bc782;
+    -fx-background-radius: 25px;
+    -fx-text-fill: white;
+}

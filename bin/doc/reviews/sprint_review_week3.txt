@@ -1,0 +1,11 @@
+What we managed to do:
+1. We already don't have any problems with git;
+2. Managed to make a working login system with communication between server and client;
+3. Made a plan for the database part;
+4. We have a gui Design;
+5. First tests for server and client.
+
+
+What we would have wanted to be done but didn't manage to achieve:
+1. Create the database and connect it to the server;
+2. Take a look at Continuous Integration.

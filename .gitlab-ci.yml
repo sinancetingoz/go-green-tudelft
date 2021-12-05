@@ -1,0 +1,37 @@
+image: maven:latest
+
+stages:
+  - build
+  - test
+  - coverage
+  - checkstyle
+
+build:
+  stage: build
+  script:
+    - mvn install
+
+test:
+  stage: test
+  script:
+    mvn test
+
+coverage:
+  stage: coverage
+  script:
+    - mvn install
+    - MISSED="$(cat target/site/jacoco/jacoco.csv | awk -F ',' '{if (NR!=1) {sum += $6}} END {print sum}')"
+    - COVERED="$(cat target/site/jacoco/jacoco.csv | awk -F ',' '{if (NR!=1) {sum += $7}} END {print sum}')"
+    - TOTAL=$(($COVERED+$MISSED))
+    - calc(){ awk "BEGIN { print "$*" }"; }
+    - RESULT=$(calc $COVERED/$TOTAL*100)
+    - RESULT=$(echo $RESULT | awk '{print int($RESULT)}')
+    - if [ $RESULT -lt 85 ]; then exit 1; fi 
+
+checkstyle:
+  stage: checkstyle
+  script:
+    - mvn site
+    - CHECKSTYLE=$(wc -l target/checkstyle-result.xml)
+    - RESULT=$(echo $CHECKSTYLE | awk -F ' ' '{print $1}')
+    - if [ $RESULT -gt 120 ]; then exit 1; fi

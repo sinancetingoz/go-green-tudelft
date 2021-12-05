@@ -1,0 +1,28 @@
+Sprint review week 7
+In the GUI part we again worked on better user experience with trying to make it a nicer looking and easy-to-use interface:
+-We worked on making more clear which category is selected by dimming the unselected categories.
+-We implemented the statistics chart to compare points with friends.
+-We made our Go Green logo better quality.
+-Friend requests can be sent with a nice looking interface and the friend search bar guesses the possible users after there is some input.
+
+On the server we worked on:
+-Deleting friend requests from database when a person declines the friend request.
+-Connecting the power saved by solar panels activity to server.
+-Checkstyle and coverage report.
+
+On database:
+-We added a new column for profile pictures which takes a type called BYTEA, which is useful to store images.
+-Added the points gained for saving energy with solar panels in the database.
+
+Next week, on GUI:
+-We will try to add profile picture interface while creating the user and in the profile section.
+-Work on better visualization
+
+On server:
+-We will implement lowering the temperature.
+-We will implement groceries.
+-We will write the tests for profile picture feature.
+
+On database:
+-We will work retrieving the stored image from the database.
+-We will create the last table for the database.
